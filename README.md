@@ -3,6 +3,7 @@
 建立單筆資料
 insert into user values
 (null, 'user1', 'ply', 'ply', now());
+
 建立多筆資料
 insert into user values
 (null, 'user2', 'Tom', 'Abc', now()),
