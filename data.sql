@@ -38,7 +38,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'丁滿','ply','ply','2021-03-23 06:23:16'),(2,'user2','Tom','Abc','2021-03-23 06:25:47'),(3,'user3','Jenny','Def','2021-03-23 06:25:47'),(4,'user4','Zac','Ghi','2021-03-23 06:25:47'),(5,'user5','Peggy','Jkf','2021-03-23 06:25:47');
+INSERT INTO `user` VALUES (1,'丁滿','ply','ply','2021-03-23 22:18:01'),(2,'user2','Tom','Abc','2021-03-23 22:18:16'),(3,'user3','Jenny','Def','2021-03-23 22:18:16'),(4,'user4','Zac','Ghi','2021-03-23 22:18:16'),(5,'user5','Peggy','Jkf','2021-03-23 22:18:16');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-03-23  6:52:46
+-- Dump completed on 2021-03-23 22:30:55
