@@ -34,3 +34,26 @@ update user set name='丁滿' where username='ply';
 
 使用 DELETE 指令刪除所有在資料表中的資料
 delete from user;
+---------------------------------------------------------------------------
+製作message資料表
+create table message (
+id bigint auto_increment current '獨立編號',
+user_id bigint not null comment '留言會員編號',
+content varchar(255) not null comment '留言內容',
+time datetime default now() comment '留言時間',
+primary key (id),
+foreign key (user_id) references user(id)
+);
+
+加入留言
+insert into message (user_id, content) values
+('1', '這遊戲太好玩啦，我把房子賣了現在在公園玩'),
+('2', '輸入TK888，就送魔關羽'),
+('3', '頂天立地，上山下海');
+
+取得所有留言，包含會員姓名
+select user.username, message.content from user
+inner join message
+on user.id=message.user_id;
+
+取得
