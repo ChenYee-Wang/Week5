@@ -52,8 +52,14 @@ insert into message (user_id, content) values
 ('3', '頂天立地，上山下海');
 
 取得所有留言，包含會員姓名
-select user.username, message.content from user
+select user.username, message.content
+from user
 inner join message
-on user.id=message.user_id;
+on user.id=message.id;
 
-取得
+取得username是ply的所有留言
+select user.username, message.content
+from user
+inner join message
+on user.id=message.id
+where username='ply';
