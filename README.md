@@ -34,7 +34,9 @@ update user set name='丁滿' where username='ply';
 
 使用 DELETE 指令刪除所有在資料表中的資料
 delete from user;
+
 ---------------------------------------------------------------------------
+
 製作message資料表
 create table message (
 id bigint auto_increment current '獨立編號',
