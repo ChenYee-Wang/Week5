@@ -3,7 +3,7 @@
 1.建立單筆資料
 insert into user (name, username, password) values
 ('user1', 'ply', 'ply');
-
+![image](https://github.com/ChenYee-Wang/Week5/blob/main/1.png)
 2.建立多筆資料
 insert into user (name, username, password) values
 ('user2', 'Tom', 'Abc'),
