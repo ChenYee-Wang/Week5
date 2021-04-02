@@ -56,21 +56,21 @@ time datetime default now() comment '留言時間',
 primary key (id),
 foreign key (user_id) references user(id)
 );
-![image](https://github.com/ChenYee-Wang/Week5/blob/main/11.png)
+![image](https://github.com/ChenYee-Wang/Week5/blob/main/額外題1.png)
 
 加入留言
 insert into message (user_id, content) values
 ('1', '這遊戲太好玩啦，我把房子賣了現在在公園玩'),
 ('2', '輸入TK888，就送魔關羽'),
 ('3', '頂天立地，上山下海');
-![image](https://github.com/ChenYee-Wang/Week5/blob/main/12.png)
+![image](https://github.com/ChenYee-Wang/Week5/blob/main/額外題2.png)
 
 取得所有留言，包含會員姓名
 select username, content
 from user
 inner join message
 on user.id=message.id;
-![image](https://github.com/ChenYee-Wang/Week5/blob/main/13.png)
+![image](https://github.com/ChenYee-Wang/Week5/blob/main/額外題3.png)
 
 取得username是ply的所有留言
 select username, content
