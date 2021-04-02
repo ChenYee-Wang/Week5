@@ -29,19 +29,19 @@ select * from user order by time desc;
 select * from user order by time desc,id limit 1, 3;
 ![image](https://github.com/ChenYee-Wang/Week5/blob/main/6.png)
 
-取得欄位username是ply的資料
+7.取得欄位username是ply的資料
 select * from user where username='ply';
 ![image](https://github.com/ChenYee-Wang/Week5/blob/main/7.png)
 
-取得欄位username且欄位password也是ply的資料
+8.取得欄位username且欄位password也是ply的資料
 select * from user where username='ply' and password='ply';
 ![image](https://github.com/ChenYee-Wang/Week5/blob/main/8.png)
 
-更新username是ply的資料，將name欄位改成【丁滿】
+9.更新username是ply的資料，將name欄位改成【丁滿】
 update user set name='丁滿' where username='ply';
 ![image](https://github.com/ChenYee-Wang/Week5/blob/main/9.png)
 
-使用 DELETE 指令刪除所有在資料表中的資料
+10.使用 DELETE 指令刪除所有在資料表中的資料
 delete from user;
 ![image](https://github.com/ChenYee-Wang/Week5/blob/main/10.png)
 
